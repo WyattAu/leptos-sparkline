@@ -1,0 +1,11 @@
+/home/wyatt/dev/src/github.com/WyattAu/leptos-sparkline/target/wasm32-unknown-unknown/debug/deps/slotmap-62d53897b0fb902c.d: /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/lib.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/basic.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/dense.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/hop.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/secondary.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/sparse_secondary.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/util.rs
+
+/home/wyatt/dev/src/github.com/WyattAu/leptos-sparkline/target/wasm32-unknown-unknown/debug/deps/libslotmap-62d53897b0fb902c.rmeta: /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/lib.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/basic.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/dense.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/hop.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/secondary.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/sparse_secondary.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/util.rs
+
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/lib.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/basic.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/dense.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/hop.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/secondary.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/sparse_secondary.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/slotmap-1.1.1/src/util.rs:

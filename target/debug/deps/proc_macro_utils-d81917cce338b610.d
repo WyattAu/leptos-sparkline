@@ -1,0 +1,10 @@
+/home/wyatt/dev/src/github.com/WyattAu/leptos-sparkline/target/debug/deps/proc_macro_utils-d81917cce338b610.d: /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/lib.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/parser.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/assert.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/__private.rs
+
+/home/wyatt/dev/src/github.com/WyattAu/leptos-sparkline/target/debug/deps/libproc_macro_utils-d81917cce338b610.rlib: /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/lib.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/parser.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/assert.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/__private.rs
+
+/home/wyatt/dev/src/github.com/WyattAu/leptos-sparkline/target/debug/deps/libproc_macro_utils-d81917cce338b610.rmeta: /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/lib.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/parser.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/assert.rs /home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/__private.rs
+
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/lib.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/parser.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/assert.rs:
+/home/wyatt/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro-utils-0.10.0/src/__private.rs:
