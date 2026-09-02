@@ -34,6 +34,8 @@
 //! }
 //! ```
 
+#![deny(missing_docs)]
+
 mod canvas;
 mod history;
 mod component;
