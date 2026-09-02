@@ -54,7 +54,7 @@ pub fn draw_sparkline(
 }
 
 /// Convert hex color string to `rgba(r,g,b,a)`.
-fn hex_to_rgba(hex: &str, alpha: f64) -> String {
+pub(crate) fn hex_to_rgba(hex: &str, alpha: f64) -> String {
     let hex = hex.trim_start_matches('#');
     let (r, g, b) = match hex.len() {
         3 => {
@@ -95,4 +95,57 @@ pub fn setup_high_dpi(
     ctx.scale(dpr, dpr).ok();
 
     (w, h)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn hex_to_rgba_6digit() {
+        assert_eq!(hex_to_rgba("#FF0000", 1.0), "rgba(255,0,0,1)");
+        assert_eq!(hex_to_rgba("#00FF00", 0.5), "rgba(0,255,0,0.5)");
+        assert_eq!(hex_to_rgba("#0000FF", 0.0), "rgba(0,0,255,0)");
+    }
+
+    #[test]
+    fn hex_to_rgba_3digit() {
+        assert_eq!(hex_to_rgba("#F00", 1.0), "rgba(255,0,0,1)");
+        assert_eq!(hex_to_rgba("#0F0", 0.5), "rgba(0,255,0,0.5)");
+        assert_eq!(hex_to_rgba("#00F", 0.0), "rgba(0,0,255,0)");
+    }
+
+    #[test]
+    fn hex_to_rgba_without_hash() {
+        assert_eq!(hex_to_rgba("FF0000", 1.0), "rgba(255,0,0,1)");
+    }
+
+    #[test]
+    fn hex_to_rgba_invalid_length() {
+        // Default cyan for invalid hex
+        let result = hex_to_rgba("#12345", 0.5);
+        assert_eq!(result, "rgba(0,229,255,0.5)");
+    }
+
+    #[test]
+    fn hex_to_rgba_empty() {
+        let result = hex_to_rgba("", 0.5);
+        assert_eq!(result, "rgba(0,229,255,0.5)");
+    }
+
+    #[test]
+    fn hex_to_rgba_common_colors() {
+        assert_eq!(hex_to_rgba("#448aff", 0.1), "rgba(68,138,255,0.1)");
+        assert_eq!(hex_to_rgba("#00e5ff", 0.1), "rgba(0,229,255,0.1)");
+        assert_eq!(hex_to_rgba("#69f0ae", 0.1), "rgba(105,240,174,0.1)");
+        assert_eq!(hex_to_rgba("#ffab00", 0.1), "rgba(255,171,0,0.1)");
+        assert_eq!(hex_to_rgba("#ff5252", 0.1), "rgba(255,82,82,0.1)");
+        assert_eq!(hex_to_rgba("#888888", 0.1), "rgba(136,136,136,0.1)");
+    }
+
+    #[test]
+    fn hex_to_rgba_black_and_white() {
+        assert_eq!(hex_to_rgba("#000000", 1.0), "rgba(0,0,0,1)");
+        assert_eq!(hex_to_rgba("#FFFFFF", 1.0), "rgba(255,255,255,1)");
+    }
 }

@@ -124,3 +124,55 @@ pub fn trend_color(data: &[f64]) -> &'static str {
         "rgba(255,255,255,0.3)" // gray
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn trend_color_up() {
+        let data = vec![10.0, 11.0, 12.0, 13.0];
+        assert_eq!(trend_color(&data), "#69f0ae");
+    }
+
+    #[test]
+    fn trend_color_down() {
+        let data = vec![13.0, 12.0, 11.0, 10.0];
+        assert_eq!(trend_color(&data), "#ff5252");
+    }
+
+    #[test]
+    fn trend_color_flat() {
+        let data = vec![10.0, 10.0, 10.0];
+        assert_eq!(trend_color(&data), "rgba(255,255,255,0.3)");
+    }
+
+    #[test]
+    fn trend_color_empty() {
+        assert_eq!(trend_color(&[]), "rgba(255,255,255,0.3)");
+    }
+
+    #[test]
+    fn trend_color_single_point() {
+        assert_eq!(trend_color(&[5.0]), "rgba(255,255,255,0.3)");
+    }
+
+    #[test]
+    fn trend_color_tiny_change() {
+        let data = vec![100.0, 100.01];
+        assert_eq!(trend_color(&data), "rgba(255,255,255,0.3)");
+    }
+
+    #[test]
+    fn trend_color_negative_values() {
+        let data = vec![-10.0, -5.0, 0.0, 5.0];
+        assert_eq!(trend_color(&data), "#69f0ae");
+    }
+
+    #[test]
+    fn trend_color_starting_near_zero() {
+        let data = vec![0.001, 0.01];
+        assert_eq!(trend_color(&data), "#69f0ae");
+    }
+
+}
