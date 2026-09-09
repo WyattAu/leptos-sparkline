@@ -2,6 +2,7 @@
 name = "leptos-sparkline"
 version = "0.1.0"
 edition = "2021"
+rust-version = "1.85"
 license = "MIT"
 description = "Sparkline mini-chart component for Leptos — renders tiny line charts on canvas with localStorage persistence"
 repository = "https://github.com/WyattAu/leptos-sparkline"
