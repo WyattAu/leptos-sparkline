@@ -7,6 +7,7 @@ description = "Sparkline mini-chart component for Leptos — renders tiny line c
 repository = "https://github.com/WyattAu/leptos-sparkline"
 keywords = ["leptos", "sparkline", "canvas", "chart", "metrics"]
 categories = ["wasm", "gui", "visualization"]
+exclude = ["/target"]
 
 [dependencies]
 leptos = { version = "0.8", default-features = false }
@@ -24,3 +25,7 @@ serde_json = "1"
 hydrate = ["leptos/hydrate"]
 ssr = ["leptos/ssr"]
 default = ["hydrate"]
+
+[lints.clippy]
+unwrap_used = "warn"
+expect_used = "warn"
