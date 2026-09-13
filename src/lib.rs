@@ -37,9 +37,9 @@
 #![deny(missing_docs)]
 
 mod canvas;
-mod history;
 mod component;
+mod history;
 
 pub use canvas::draw_sparkline;
-pub use history::SparklineHistory;
 pub use component::Sparkline;
+pub use history::{push_batch, trend_color, SparklineHistory};

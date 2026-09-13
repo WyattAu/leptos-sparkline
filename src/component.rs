@@ -27,20 +27,25 @@ pub fn Sparkline(
 ) -> impl IntoView {
     let w = width.unwrap_or(60.0);
     let h = height.unwrap_or(20.0);
-    let color = if color.is_empty() { "#00E5FF".to_string() } else { color };
+    let color = if color.is_empty() {
+        "#00E5FF".to_string()
+    } else {
+        color
+    };
 
     let (canvas_id, _set_canvas_id) = signal(format!("spark-{}", js_sys::Math::random()));
 
     #[cfg(feature = "hydrate")]
     {
-        let canvas_id = canvas_id.clone();
         let color_clone = color.clone();
 
         // Draw sparkline when data changes
         Effect::new(move |_| {
             let d = data.get();
             let id = canvas_id.get();
-            if d.len() < 2 { return; }
+            if d.len() < 2 {
+                return;
+            }
 
             // Defer to next microtask to ensure canvas is in DOM
             let color = color_clone.clone();

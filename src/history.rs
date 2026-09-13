@@ -4,7 +4,6 @@
 //! with automatic trimming to a configurable maximum length.
 
 use leptos::prelude::*;
-use std::cell::RefCell;
 
 /// Persistent sparkline history for a single metric.
 ///
@@ -112,8 +111,12 @@ pub fn trend_color(data: &[f64]) -> &'static str {
     if data.len() < 2 {
         return "rgba(255,255,255,0.3)";
     }
-    let first = data.first().unwrap();
-    let last = data.last().unwrap();
+    let Some(&first) = data.first() else {
+        return "rgba(255,255,255,0.3)";
+    };
+    let Some(&last) = data.last() else {
+        return "rgba(255,255,255,0.3)";
+    };
     let change = (last - first) / first.abs().max(0.01);
 
     if change > 0.01 {
@@ -174,5 +177,4 @@ mod tests {
         let data = vec![0.001, 0.01];
         assert_eq!(trend_color(&data), "#69f0ae");
     }
-
 }
