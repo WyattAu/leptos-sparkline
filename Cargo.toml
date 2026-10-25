@@ -1,10 +1,10 @@
 [package]
 name = "leptos-sparkline"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.85"
 license = "MIT"
-description = "Sparkline mini-chart component for Leptos — renders tiny line charts on canvas with localStorage persistence"
+description = "Leptos component (see repo)"
 repository = "https://github.com/WyattAu/leptos-sparkline"
 keywords = ["leptos", "sparkline", "canvas", "chart", "metrics"]
 categories = ["wasm", "gui", "visualization"]
