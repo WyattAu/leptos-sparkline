@@ -1,14 +1,14 @@
 # leptos-sparkline
 
-Sparkline mini-chart component for [Leptos](https://leptos.dev/) — renders tiny line charts on HTML5 canvas with localStorage persistence.
+Sparkline mini-chart component for [Leptos](https://leptos.dev/); renders tiny line charts on HTML5 canvas with localStorage persistence.
 
 ## Features
 
-- **Canvas-based rendering** — high-DPI aware, crisp on Retina displays
-- **localStorage persistence** — data survives page reloads
-- **Signal-driven reactivity** — re-renders when data changes
-- **Trend coloring** — auto-color based on direction (green up, red down)
-- **Minimal footprint** — ~2KB WASM, zero dependencies beyond Leptos + web-sys
+- **Canvas-based rendering**; high-DPI aware, crisp on Retina displays
+- **localStorage persistence**; data survives page reloads
+- **Signal-driven reactivity**; re-renders when data changes
+- **Trend coloring**; auto-color based on direction (green up, red down)
+- **Minimal footprint**; ~2KB WASM, zero dependencies beyond Leptos + web-sys
 
 ## Installation
 
